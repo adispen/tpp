@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  	<link href='img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch Plays Pokemon</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <nav class="top-bar" data-topbar> 
+    	<ul class="title-area"> 
+    		<li class="name"> 
+    			<h1><a href="#">Twitch Plays Pokemon</a></h1> 
+    		</li>
+    	</ul> 
+
+    	<section class="top-bar-section"> 
+    	<!-- Right Nav Section --> 
+    		<ul class="right">
+    			<li>
+    				<a href="http://www.reddit.com/r/twitchplayspokemon">/r/TwitchPlaysPokemon</a>
+    			</li>
+    		</ul>
+    		<ul class="right">
+    			<li>
+    				<a href="https://sites.google.com/site/twitchplayspokemonstatus/">Up-to-Date Google Doc</a>
+    			</li>
+    		</ul>
+    	</section> 
+    </nav>
+    <br>
+    <div id="badges">
+    	<img src="img/50px-Boulder_Badge.png"><img src="img/50px-Cascade_Badge.png"><img src="img/50px-Thunder_Badge.png"><img src="img/50px-Rainbow_Badge.png"><img src="img/50px-Soul_Badge.png"><img src="img/50px-Marsh_Badge.png"><img src="img/50px-Volcano_Badge.png"><img src="img/50px-Earth_Badge.png">
+    </div>
+    <br>
+    <div id="e4">
+    	<img src="img/Spr_FRLG_Lorelei_BW.png"><img src="img/Spr_FRLG_Bruno_BW.png"><img src="img/Spr_FRLG_Agatha_BW.png"><img src="img/Spr_FRLG_Lance_BW.png"><img src="img/90px-FireRed_LeafGreen_Blue_BW.png" style="height:60px; padding-left:1%;">
+    </div>
+    <br>
+    <div id="video">
+    	<object style="height:500px;" width="720" height="500" id="videoPlayer" type="application/x-shockwave-flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=twitchplayspokemon"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=twitchplayspokemon&amp;auto_play=true&amp;start_volume={VOLUME}"></object>
+    	<iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=twitchplayspokemon&amp;popout_chat=true" height="500" width="350"></iframe>
+    </div>
+    <br>
+  
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
