@@ -3,7 +3,22 @@ body{
 }
 
 #video{
-	text-align: center;
+	width: auto;
+	height: auto;
+	display: inline;
+	//text-align: center;
+}
+#video #videoPlayer {
+	height: 500px;
+	width: 720px;
+}
+body > .row {
+	max-width: 1200px;
+}
+#video .row {
+	#margin-left: 0;
+	#margin-right: 0;
+	#max-width: 100%;
 }
 
 #badges{
@@ -17,5 +32,51 @@ body{
 
 #party{
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 30px;
+}
+#chat{
+	height: 500px;
+	width: 350px;
+	display: inline;
+}
+#chat iframe {
+	height: 500px;
+	width: 350px;
+}
+
+#closechat{
+	text-align: center;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #533787; 
+}
+button, .button {
+    display: inline-block;
+}
+button, .button {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    transition: background-color 300ms ease-out 0s;
+}
+button, .button {
+    padding-bottom: 0.75em;
+    padding-top: 0.8125em;
+}
+button, .button {
+    background-color: #6A4E9E;
+    border-color: #412771;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 3px;
+    padding: 0.75em 1.5em 1px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
 }
