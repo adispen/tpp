@@ -3,7 +3,22 @@ body{
 }
 
 #video{
-	text-align: center;
+	width: auto;
+	height: auto;
+	display: inline;
+	//text-align: center;
+}
+#video #videoPlayer {
+	height: 500px;
+	width: 720px;
+}
+body > .row {
+	max-width: 1200px;
+}
+#video .row {
+	#margin-left: 0;
+	#margin-right: 0;
+	#max-width: 100%;
 }
 
 #badges{
@@ -17,6 +32,16 @@ body{
 
 #party{
 	text-align: center;
+	padding-top: 30px;
+}
+#chat{
+	height: 500px;
+	width: 350px;
+	display: inline;
+}
+#chat iframe {
+	height: 500px;
+	width: 350px;
 }
 
 #closechat{
