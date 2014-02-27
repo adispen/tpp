@@ -65,17 +65,15 @@
     <script>
       $(document).foundation();
 
-      var closed = 0;
       function closeChat (){
-      	if(closed == 0){
+			var frame = document.getElementById("chat_embed");
+			if (frame.style.display != 'none'){
 	      	var width = $(window).width();
-	      	var frame = document.getElementById("chat_embed");
 	        frame.style.display = 'none';
 	      	$("#videoPlayer").width(width*.8);
 	      	closed = 1;
 	      	return;
-	    }
-	    if(closed == 1){
+			} else {
 	    	var width = $(window).width();
 	  		$("#videoPlayer").width(width*.54);
 	      	var frame = document.getElementById("chat_embed");
