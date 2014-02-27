@@ -52,6 +52,9 @@
     	<object style="height: 500px" width="720" height="500" id="videoPlayer" type="application/x-shockwave-flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=twitchplayspokemon"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=twitchplayspokemon&amp;auto_play=true&amp;start_volume={VOLUME}"></object>
     	<iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=twitchplayspokemon&popout_chat=true" height="500" width="350"></iframe>
     </div>
+    <div id="closechat">
+    	<a style="height:25px; padding-bottom:25px;" class="button" id="closechat" onclick="closeChat();">Close/Open Chat</a>
+    </div>
     <!--
     <div style="text-align:center;">
   		<iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.reddit.com/live/sw7bubeycai6hey4ciytwamw3a" height="500" width="350"></iframe>
@@ -61,6 +64,26 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+
+      var closed = 0;
+      function closeChat (){
+      	if(closed == 0){
+	      	var width = $(window).width();
+	      	var frame = document.getElementById("chat_embed");
+	        frame.style.display = 'none';
+	      	$("#videoPlayer").width(width*.8);
+	      	closed = 1;
+	      	return;
+	    }
+	    if(closed == 1){
+	    	var width = $(window).width();
+	  		$("#videoPlayer").width(width*.54);
+	      	var frame = document.getElementById("chat_embed");
+	        frame.style.display = 'initial';
+	        closed = 0;
+	        return;
+	    }
+      }
 
       var width = $(window).width();
 	  console.log(width);
