@@ -12,6 +12,9 @@ body{
 	height: 500px;
 	width: 720px;
 }
+#videocontainer {
+	text-align: center;
+}
 body > .row {
 	max-width: 1200px;
 }
