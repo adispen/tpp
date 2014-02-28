@@ -62,7 +62,7 @@
 		</div>
 		<br/>
 		<div class="row">
-			<div class="large-12 columns">
+			<div id="videocontainer" class="large-12 columns">
 				<div id="video">
 					<object width="720" height="500" id="videoPlayer" type="application/x-shockwave-flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=twitchplayspokemon"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=twitchplayspokemon&amp;auto_play=true&amp;start_volume={VOLUME}"></object>
 				</div>
@@ -96,8 +96,7 @@
 						closed = 1;
 						return;
 				} else {
-					var width = $(window).width();
-					$("#videoPlayer").width(width*.54);
+					$("#videoPlayer").width($("#videoPlayer").width() - frame.width())
 					frame.css('display','inline');
 					closed = 0;
 					return;
