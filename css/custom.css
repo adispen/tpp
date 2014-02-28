@@ -51,6 +51,10 @@ body > .row {
 	text-align: center;
 }
 
+#halloffame{
+	text-align: center;
+}
+
 button:hover, button:focus, .button:hover, .button:focus {
     background-color: #533787; 
 }
