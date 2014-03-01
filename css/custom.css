@@ -55,6 +55,19 @@ body > .row {
 	text-align: center;
 }
 
+#halloffame img{
+	width: 96px;
+	height: 96px;
+	padding-right: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.hallpokes{
+	border: none;
+	background-color: inherit;
+}
+
 button:hover, button:focus, .button:hover, .button:focus {
     background-color: #533787; 
 }
