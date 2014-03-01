@@ -6,7 +6,7 @@ body{
 	width: auto;
 	height: auto;
 	display: inline;
-	//text-align: center;
+	text-align: center;
 }
 #video #videoPlayer {
 	height: 500px;
@@ -60,6 +60,10 @@ body > .row {
 	height: 96px;
 	padding-right: 0px;
 	padding-left: 0px;
+	text-align: center;
+}
+
+#livefeed{
 	text-align: center;
 }
 
