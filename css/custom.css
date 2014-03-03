@@ -112,3 +112,14 @@ button, .button {
     text-align: center;
     text-decoration: none;
 }
+
+.top-bar .name h1 a:before {
+    background-image: url('../img/RBTV_icon.png');
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+    position: relative;
+    width: 16px;
+}
