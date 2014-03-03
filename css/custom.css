@@ -63,6 +63,10 @@ body > .row {
 	text-align: center;
 }
 
+#halloffame h1, h2, h5{
+	color: GoldenRod;
+}
+
 body a{
 	color: white;
 }
@@ -78,6 +82,10 @@ body a:hover, a:focus{
 .hallpokes{
 	border: none;
 	background-color: inherit;
+}
+
+.hallpokes td, tr{
+	color: goldenrod;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
