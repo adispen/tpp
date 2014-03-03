@@ -81,7 +81,7 @@ body a:hover, a:focus{
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #533787; 
+    background-color: #533787;
 }
 button, .button {
     display: inline-block;
@@ -122,4 +122,5 @@ button, .button {
     margin-right: 10px;
     position: relative;
     width: 16px;
+    z-index: 2;
 }
