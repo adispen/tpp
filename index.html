@@ -117,13 +117,14 @@
     </div>
 	
 	<br>
-
+<!--
 	<h3 style="text-align:center; padding-top:3%; color:goldenrod;">Courtesy of <a href="www.twitchplayspokemon.org">twitchplayspokemon.org</a>.</h3>
 
-	<div class="large-12 columns" id="livefeed">
-    	<iframe frameborder="0" width="1200" height="500" src="http://www.twitchplayspokemon.org#pokemon"></iframe>
+	<div onload="this.style.display='none';" class="large-12 columns" align="center">
+    	<iframe frameborder="0" width="1200" height="500" src="http://www.twitchplayspokemon.org/#pokemon"></iframe>
 	</div>
 	<br>
+-->
 
     <div class="large-12 columns" id="halloffame" >
     	<h1 style="font-weight:600;">Hall of Fame</h1>
@@ -165,6 +166,11 @@
 	<script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
     <script>
+
+		$(document).ready(function(){
+		    $('html,body').scrollTop(0);
+	    });
+
       $(document).foundation();
 
       function closeChat (){
