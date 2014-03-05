@@ -117,14 +117,14 @@
     </div>
 	
 	<br>
-<!--
+
 	<h3 style="text-align:center; padding-top:3%; color:goldenrod;">Courtesy of <a href="www.twitchplayspokemon.org">twitchplayspokemon.org</a>.</h3>
 
-	<div onload="this.style.display='none';" class="large-12 columns" align="center">
-    	<iframe frameborder="0" width="1200" height="500" src="http://www.twitchplayspokemon.org/#pokemon"></iframe>
+	<div class="large-12 columns" align="center">
+    	<iframe id="ifr" frameborder="0" width="1200" height="500" src="http://www.twitchplayspokemon.org/"></iframe>
+
 	</div>
 	<br>
--->
 
     <div class="large-12 columns" id="halloffame" >
     	<h1 style="font-weight:600;">Hall of Fame</h1>
@@ -167,10 +167,6 @@
     <script src="js/foundation/foundation.topbar.js"></script>
     <script>
 
-		$(document).ready(function(){
-		    $('html,body').scrollTop(0);
-	    });
-
       $(document).foundation();
 
       function closeChat (){
@@ -208,6 +204,14 @@
 	<div class="row">
 		<h6 style="text-align:center;">Created by <a href="http://github.com/adispen"> adispen</a> aka <a href="https://twitter.com/OrangeSodaSmurf">OrangeSodaSmurf</a>.</h6>
 	</div>
+
+  <script type="text/javascript">
+  	var ifr = document.getElementById("ifr");
+
+	ifr.onload = function() {
+		ifr.src +=  "#pokemon"
+	};
+  </script>
 
   </body>
 </html>
