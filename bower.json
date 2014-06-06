@@ -1,0 +1,6 @@
+{
+  "name": "twitch-plays-pokemon-io",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}
