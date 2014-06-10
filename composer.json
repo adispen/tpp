@@ -1,0 +1,7 @@
+{
+    "name": "hjc1710/tpp",
+    "require" : {
+        "symfony/console": "2.4.6",
+        "laravel/envoy": "~1.0"
+    }
+}
