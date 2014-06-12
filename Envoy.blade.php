@@ -16,11 +16,14 @@
     # CD to project repo
     cd '{{$config->deploy_path}}';
 
+
     # change branch
     git checkout '{{ $branch }}';
 
+
     # update files
     git pull '{{$remote}}' '{{$branch}}';
+
 
     # build any new CSS
     grunt build;
