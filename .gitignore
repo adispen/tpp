@@ -5,3 +5,5 @@
 /css/*
 /bower_components/*
 /node_modules/*
+/deploy/deploy.config.json
+/vendor/*
