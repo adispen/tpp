@@ -12,7 +12,18 @@
 
 @servers((array) $config->servers)
 
-@task('deploy-prod', ['on' => 'prod'])
+@task('build')
+    # task to build CSS and JS, generic task, but needs a proper path
+    # CD to project repo
+    cd '{{$config->deploy_path}}';
+
+
+    # build any new CSS
+    grunt build;
+@endtask
+
+@task('deploy')
+    # task to do the actual deploy
     # CD to project repo
     cd '{{$config->deploy_path}}';
 
@@ -23,8 +34,10 @@
 
     # update files
     git pull '{{$remote}}' '{{$branch}}';
-
-
-    # build any new CSS
-    grunt build;
 @endtask
+
+//a macro to marry the two tasks and deploy then build
+@macro('deploy-prod', ['on' => 'prod'])
+    deploy
+    build
+@endmacro
