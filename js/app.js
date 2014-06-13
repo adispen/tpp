@@ -33,7 +33,6 @@ $(function () {
             now = now.getTime();
 
             total_seconds = target - now;
-            console.log('???????');
             //to seconds
             total_seconds = parseInt(total_seconds / 1000.0);
 
@@ -54,8 +53,6 @@ $(function () {
 
             minutes = parseInt(total_seconds / minute);
             seconds = total_seconds % minute;
-
-            console.log(days, hours, minutes, seconds);
 
             var day_text = days != 1 ? 'days' : 'day',
                 hour_text = hours != 1 ? 'hours' : 'hour',
