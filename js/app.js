@@ -70,6 +70,6 @@ $(function () {
             setTimeout(getSecondsRemaining, 1000);
         };
 
-        setTimeout(getSecondsRemaining, 1000);
+//        setTimeout(getSecondsRemaining, 1000);
     }
 });
