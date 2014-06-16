@@ -1,0 +1,192 @@
+@import "settings";
+
+//@import "general_foundicons_ie7";
+@import "foundation";
+@import "general_foundicons";
+
+body{
+  background-image: url('../img/grey_wash_wall.png');
+
+  > .row   {
+    max-width: 1200px;
+  }
+
+  a {
+    color: white;
+
+    &:hover, &:focus{
+      color: gray;
+    }
+  }
+
+  #live-updater {
+    margin-left: 31px;
+  }
+}
+
+#video{
+  width: auto;
+  height: auto;
+  display: inline;
+  text-align: center;
+
+  #videoPlayer {
+    height: 500px;
+    width: 720px;
+  }
+}
+#videocontainer {
+  text-align: center;
+}
+
+#video .row {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+#badges{
+  padding-top: .5%;
+  text-align: center;
+}
+
+#e4{
+  text-align: center;
+}
+
+#party{
+  text-align: center;
+  padding-top: 30px;
+}
+#chat{
+  height: 500px;
+  width: 350px;
+  display: inline;
+
+  iframe {
+    height: 500px;
+    width: 350px;
+  }
+}
+
+#closechat{
+  text-align: center;
+}
+
+#halloffame{
+  text-align: center;
+
+  img{
+    width: 96px;
+    height: 96px;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  h1, h2, h5{
+    color: GoldenRod;
+  }
+}
+
+#livefeed{
+  text-align: center;
+}
+
+.hallpokes{
+  border: none;
+  background-color: inherit;
+
+  td, tr{
+    color: goldenrod;
+  }
+}
+
+button, .button {
+  &:focus, &:hover {
+    background-color: #533787;
+  }
+}
+button, .button {
+  display: inline-block;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  transition: background-color 300ms ease-out 0s;
+
+  background-color: #6A4E9E;
+  border-color: #412771;
+  border-style: solid;
+  border-width: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 3px;
+  padding: 0.75em 1.5em 1px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tpp-org-refresh-container {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+
+  .tpp-org-refresh {
+    font-size: 30px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.badge {
+  width: 50px;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";

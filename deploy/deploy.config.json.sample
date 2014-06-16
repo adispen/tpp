@@ -1,0 +1,9 @@
+{
+    "servers": {
+        "prod": "YOU@YOUR_SERVER_IP_HERE",
+        "stage": "YOU@YOUR_STAGE_SERVER_HERE"
+    },
+    "deploy_path": "/var/www/tpp",
+    "branch": "master",
+    "remote": "origin"
+}
