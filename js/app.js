@@ -63,13 +63,13 @@ $(function () {
                 ', ' + hours + ' ' + hour_text +
                 ', ' + minutes + ' ' + minute_text +
                 ', and ' + seconds + ' ' + second_text +
-                ' until Pokemon Black starts!';
+                ' until Pokemon Black 2 starts!';
 
             $countdown.text(text);
 
             setTimeout(getSecondsRemaining, 1000);
         };
 
-//        setTimeout(getSecondsRemaining, 1000);
+        setTimeout(getSecondsRemaining, 1000);
     }
 });
